@@ -1,0 +1,60 @@
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 70px 0px 70px;
+  border: 1px red solid;
+}
+
+.left {
+  flex: 1;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name-lable {
+  font-size: 4em;
+  font-weight: bold;
+}
+
+.work-title {
+  color: rgb(3, 231, 174);
+}
+.work-summary {
+  font-size: 1em;
+}
+
+.btn-hire-me {
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(3, 231, 174);
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.btn-hire-me:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
+.right {
+  flex: 1;
+}
+
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-sticker {
+  width: 450px;
+  height: 450px;
+}

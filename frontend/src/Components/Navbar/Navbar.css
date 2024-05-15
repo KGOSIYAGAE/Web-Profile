@@ -1,0 +1,23 @@
+.navbar {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-items {
+  display: flex;
+  gap: 50px;
+}
+
+.item {
+  color: white;
+}
+
+.active {
+  color: rgb(3, 231, 174);
+}
+
+.item:hover {
+  border-bottom: 2px rgb(3, 231, 174) solid;
+}
