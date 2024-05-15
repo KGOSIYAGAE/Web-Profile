@@ -1,0 +1,45 @@
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  gap: 30px;
+}
+
+.portfolio-title span:nth-child(1) {
+  font-weight: bold;
+  font-size: 5em;
+  color: rgb(3, 231, 174);
+}
+
+.portfolio-title span:nth-child(2) {
+  font-weight: bold;
+  font-size: 5em;
+  padding-left: 20px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.project-card {
+  width: 280px;
+  height: 200px;
+  background-color: antiquewhite;
+}
+
+.btn-load-more {
+  height: 50px;
+  width: 150px;
+  border-radius: 30px;
+  border: none;
+  background-color: rgb(3, 231, 174);
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}

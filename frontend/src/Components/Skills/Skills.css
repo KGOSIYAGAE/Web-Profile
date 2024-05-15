@@ -1,0 +1,44 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 70px;
+  gap: 30px;
+}
+
+.skill-titles span:nth-child(1) {
+  font-weight: bold;
+  font-size: 5em;
+  color: rgb(3, 231, 174);
+}
+
+.skill-titles span:nth-child(2) {
+  font-weight: bold;
+  font-size: 5em;
+  padding-left: 20px;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+
+.grid-box {
+  width: 180px;
+  height: 110px;
+  background-color: #202020;
+  border-radius: 5px;
+  box-shadow: -5px 9px 6px -6px #111111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.grid-box:hover {
+  background-color: white;
+  color: black;
+}

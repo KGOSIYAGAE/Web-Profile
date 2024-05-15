@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   padding: 0px 70px 0px 70px;
-  border: 1px red solid;
 }
 
 .left {
@@ -18,7 +17,7 @@
 }
 
 .name-lable {
-  font-size: 4em;
+  font-size: 5em;
   font-weight: bold;
 }
 
@@ -36,7 +35,6 @@
   border: none;
   background-color: rgb(3, 231, 174);
   margin-top: 10px;
-  font-weight: bold;
 }
 
 .btn-hire-me:hover {
