@@ -49,6 +49,11 @@
   margin-top: 10px;
 }
 
+.btn-download:hover {
+  transform: scale(1.1);
+  transition: 0.1s;
+}
+
 .download-icon {
   padding-left: 10px;
 }
