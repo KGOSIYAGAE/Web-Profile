@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import "./Portfolio.css";
+import "./Portfolio.scss";
 import { IoReload } from "react-icons/io5";
+import { project_imgs } from "../../utils/helper.js";
 
 function Portfolio() {
   return (
@@ -10,11 +11,21 @@ function Portfolio() {
         <span>PORTFOLIO</span>
       </div>
       <div className="portfolio-grid">
-        <div className="project-card"></div>
-        <div className="project-card"></div>
-        <div className="project-card"></div>
-        <div className="project-card"></div>
-        <div className="project-card"></div>
+        {project_imgs.map((project) => (
+          <div className="project-card">
+            <div className="card-info">
+              <span>{project.name}</span>
+              <span>{project.description}</span>
+              <a href="http://" target="blank">
+                Live Demo
+              </a>
+              <a href={project.code} target="blank">
+                Code
+              </a>
+            </div>
+            <img src={project.img} alt="" className="project-img" />
+          </div>
+        ))}
       </div>
       <button className="btn-load-more">
         Load More
