@@ -28,8 +28,10 @@ function Portfolio() {
         ))}
       </div>
       <button className="btn-load-more">
-        Load More
-        <IoReload size={18} />
+        <a href="https://github.com/KGOSIYAGAE?tab=repositories" target="_blank" rel="noopener noreferrer">
+          Load More
+          <IoReload size={18} />
+        </a>
       </button>
     </div>
   );

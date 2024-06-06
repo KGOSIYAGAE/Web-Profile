@@ -88,6 +88,11 @@
   background-color: #202020;
 }
 
+.social-icon a {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
 .social-icon:hover {
   background-color: rgb(3, 231, 174);
 }

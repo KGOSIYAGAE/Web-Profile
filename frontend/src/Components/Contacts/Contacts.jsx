@@ -35,6 +35,7 @@ function Contacts() {
           </div>
           <div className="icon-box">
             <FaPhone size={30} className="contacts-icon" />
+
             <div className="icon-text">
               <span>Number :</span>
               <span>0789384743</span>
@@ -42,16 +43,24 @@ function Contacts() {
           </div>
           <div className="social-media-box">
             <div className="social-icon">
-              <FaGithub size={20} className="" />
+              <a href="https://github.com/KGOSIYAGAE" target="_blank" rel="noopener noreferrer">
+                <FaGithub size={20} className="" />
+              </a>
+            </div>
+            <div className="social-icon" onClick={() => {}}>
+              <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
+                <FaFacebook size={20} className="" />
+              </a>
             </div>
             <div className="social-icon">
-              <FaFacebook size={20} className="" />
+              <a href="https://wa.me/1" target="_blank" rel="noopener noreferrer">
+                <FaWhatsapp size={20} className="" />
+              </a>
             </div>
             <div className="social-icon">
-              <FaWhatsapp size={20} className="" />
-            </div>
-            <div className="social-icon">
-              <FaLinkedin size={20} className="" />
+              <a href="https://www.linkedin.com/in/kgosiyagae-motabogi-026a611ab/" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin size={20} className="" />
+              </a>
             </div>
           </div>
         </div>
