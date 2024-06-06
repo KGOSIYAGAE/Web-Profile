@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Portfolio.scss";
 import { IoReload } from "react-icons/io5";
-import { project_imgs } from "../../utils/helper.js";
+import { projectList } from "../../utils/helper.js";
 
 function Portfolio() {
   return (
@@ -11,15 +11,15 @@ function Portfolio() {
         <span>PORTFOLIO</span>
       </div>
       <div className="portfolio-grid">
-        {project_imgs.map((project) => (
+        {projectList.map((project) => (
           <div className="project-card">
             <div className="card-info">
-              <span>{project.name}</span>
+              <span>{project.title}</span>
               <span>{project.description}</span>
               <a href="http://" target="blank">
                 Live Demo
               </a>
-              <a href={project.code} target="blank">
+              <a href={project.codeUrl} target="blank">
                 Code
               </a>
             </div>
