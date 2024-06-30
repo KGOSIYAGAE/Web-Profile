@@ -1,26 +1,19 @@
 import React from "react";
-import "./Home.css";
 import Navbar from "../../Components/Navbar/Navbar";
 import About from "../../Components/About/About";
 
 function Home() {
   return (
-    <div>
-      <div className="home">
-        <div className="left">
-          <div className="details">
-            <p>HI THERE 👋 I'M</p>
-            <span className="name-lable">Kgosiyagae Motabogi</span>
-            <span className="work-title">DEVELOPER + UI/UX DESIGNER 💻</span>
-            <span className="work-summary">I'm a proffessional App developer with UI/UX Designer skills based in Kimberley</span>
-            <button className="btn-hire-me">Hire Me</button>
-          </div>
-        </div>
-        <div className="right">
-          <div className="img-container">
-            <img src="../public/sticker-laptop.webp" alt="" className="img-sticker" />
-          </div>
-        </div>
+    <div className="grid gap-2 p-10 md:grid-cols-2">
+      <div className="flex  justify-center flex-col gap-5">
+        <h4>HI THERE 👋 I'M</h4>
+        <h1 className="text-6xl font-bold">Kgosiyagae Motabogi</h1>
+        <h4 className="text-blue-400">DEVELOPER + UI/UX DESIGNER</h4>
+        <p>I'm a professional App developer with UI/UX Designer skills based in kimberley</p>
+        <button className="w-[150px] bg-blue-400 p-3 rounded-3xl hover:bg-blue-500">Hire Me</button>
+      </div>
+      <div className="flex items-center justify-center">
+        <img src="/public/sticker-laptop.webp" alt="kgosi's picture" />
       </div>
     </div>
   );
