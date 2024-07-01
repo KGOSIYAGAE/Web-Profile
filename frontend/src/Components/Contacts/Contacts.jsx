@@ -71,12 +71,12 @@ function Contacts() {
         <div className="flex flex-col justify-center">
           <form action="" className="flex flex-col gap-3">
             <div className="flex gap-5">
-              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-2 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your name" />
-              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-2 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your number" />
+              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your name" />
+              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your number" />
             </div>
             <div className="flex gap-5">
-              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-2 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your email" />
-              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-2 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your subject" />
+              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your email" />
+              <input type="text" className="w-[400px] bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your subject" />
             </div>
             <textarea name="" id="" placeholder="your message" className="h-[200px] bg-neutral-800 outline-none rounded-3xl placeholder:p-3"></textarea>
             <button className="flex gap-3 items-center w-[150px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">Send Message</button>

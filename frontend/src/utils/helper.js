@@ -5,6 +5,11 @@ export const skills = [
   { id: 3, name: "TAILWIND CSS", icon: "https://img.icons8.com/color/48/tailwind_css.png" },
   { id: 4, name: "FIGMA", icon: "https://img.icons8.com/color/48/figma--v1.png" },
   { id: 5, name: "GIT", icon: "https://img.icons8.com/color/48/git.png" },
+  { id: 6, name: "JAVA", icon: "https://img.icons8.com/?size=100&id=13679&format=png&color=000000" },
+  { id: 7, name: "GITHUB", icon: " https://img.icons8.com/?size=100&id=12599&format=png&color=000000" },
+  { id: 8, name: "REACT JS", icon: "https://img.icons8.com/?size=100&id=YYYhFVbH4vFv&format=png&color=000000" },
+  { id: 9, name: "SQL", icon: "https://img.icons8.com/?size=100&id=Ign0QG33bZzq&format=png&color=000000" },
+  { id: 10, name: "MONGO Db", icon: "https://img.icons8.com/?size=100&id=bosfpvRzNOG8&format=png&color=000000" },
 ];
 
 export const projectList = [

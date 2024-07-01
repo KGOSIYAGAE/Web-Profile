@@ -9,20 +9,21 @@ function Portfolio() {
         <span className="text-blue-500">MY</span>
         <span>PORTFOLIO</span>
       </div>
-      <div className="grid grid-cols-2 lg:grid-cols-3 items-center justify-center gap-5">
+      <div className="grid grid-cols-1 lg:grid-cols-2 items-center justify-center gap-5">
         {projectList.map((project) => (
-          <div className="">
-            {/*<div className="">
+          <div className="max-w-[400px] md:max-w-[500px]  bg-neutral-800 rounded-md shadow-sm hover:scale-105 transition-all">
+            <img src={project.img} alt="" className="transition-all rounded-tr-md rounded-tl-md" />
+
+            <div className="flex flex-col items-center gap-2 p-5">
               <span>{project.title}</span>
               <span>{project.description}</span>
-              <a href="http://" target="blank">
+              <a href="http://" target="blank" className="hover:text-blue-500">
                 Live Demo
               </a>
-              <a href={project.codeUrl} target="blank">
+              <a href={project.codeUrl} target="blank" className="hover:text-blue-500">
                 Code
               </a>
-            </div>*/}
-            <img src={project.img} alt="" className="max-w-[200px] md:max-w-[300px] transition-all hover:scale-95 hover:invisible" />
+            </div>
           </div>
         ))}
       </div>
