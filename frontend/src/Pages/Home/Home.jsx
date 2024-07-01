@@ -13,7 +13,7 @@ function Home() {
         <button className="w-[150px] bg-blue-500 p-3 rounded-3xl hover:bg-blue-600">Hire Me</button>
       </div>
       <div className="flex items-center justify-center">
-        <img src="/public/sticker-laptop.webp" alt="kgosi's picture" />
+        <img src="/sticker-laptop.webp" alt="kgosi's picture" />
       </div>
     </div>
   );

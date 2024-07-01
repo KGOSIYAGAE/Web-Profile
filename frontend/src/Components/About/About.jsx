@@ -10,7 +10,7 @@ function About() {
       </div>
       <div className="grid items-center justify-center gap-2 md:grid-cols-2">
         <div className="flex justify-center">
-          <img src="../public/sticker-peace.webp" alt="" />
+          <img src="/sticker-peace.webp" alt="" />
         </div>
         <div className="flex flex-col gap-5">
           <h4 className="text-xl font-bold">PERSONAL INFO</h4>
