@@ -25,7 +25,7 @@ function Navbar() {
   };
 
   return (
-    <div className={`md:sticky md:top-0`}>
+    <div className={`sticky top-0`}>
       <div className={`md:p-4 ${navScroll ? "md:bg-color-nav" : "bg-transparent"} md:transition-all invisible md:visible`}>
         <div className="flex flex-row items-center justify-center mt-3 gap-20">
           <span className="hover:text-blue-500 cursor-pointer">Home</span>
@@ -36,7 +36,7 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="fixed visible md:invisible transition-all absolute top-0">
+      <div className="visible md:invisible transition-all absolute top-3">
         <MdMenu className="text-4xl hover:cursor-pointer" onClick={handleSideNav} />
         <div className={`w-[180px] flex flex-col bg-neutral-800 absolute py-10 ${isShow ? "translate-x-0" : "-translate-x-full"} transition-all top-0`}>
           <MdClose className="absolute top-3 right-3 text-red-500 text-4xl hover:cursor-pointer " onClick={handleSideNav} />
