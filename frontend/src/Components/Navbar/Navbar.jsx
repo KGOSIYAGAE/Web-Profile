@@ -36,15 +36,15 @@ function Navbar() {
         </div>
       </div>
 
-      <div className="visible md:invisible transition-all absolute top-3">
-        <MdMenu className="text-4xl hover:cursor-pointer" onClick={handleSideNav} />
-        <div className={`w-[180px] flex flex-col bg-neutral-800 absolute py-10 ${isShow ? "translate-x-0" : "-translate-x-full"} transition-all top-0`}>
-          <MdClose className="absolute top-3 right-3 text-red-500 text-4xl hover:cursor-pointer " onClick={handleSideNav} />
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3">Home</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3">About</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3">Skill</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3">Portfolio</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3">Contatct Me</span>
+      <div className={`w-full visible md:invisible transition-all absolute top-3 py-2 -mt-5 ${navScroll ? "bg-color-nav" : "bg-transparent"}`}>
+        <MdMenu className="text-6xl hover:cursor-pointer" onClick={handleSideNav} />
+        <div className={`w-[250px] h-[500px] flex flex-col bg-neutral-800 absolute py-10 ${isShow ? "translate-x-0" : "-translate-x-full"} transition-all top-0`}>
+          <MdClose className="absolute top-3 right-3 text-red-500 text-5xl hover:cursor-pointer " onClick={handleSideNav} />
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Home</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">About</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Skill</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Portfolio</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Contatct Me</span>
         </div>
       </div>
     </div>
