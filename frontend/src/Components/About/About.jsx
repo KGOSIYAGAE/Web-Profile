@@ -19,7 +19,7 @@ function About() {
             Able To Complete It At The End. I Have Experience With JavaScript, HTML, CSS, GIT And Github. I've Built Different Projects And UI Landing Pages With Them. I'm Interested In All Things
             Tech And Currently Expanding My Knowledge And Skillset. I'm Currently Open Up To Work And Interships.
           </p>
-          <button className="flex flex-row gap-3 items-center text-sm w-[155px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">
+          <button className="flex flex-row gap-3 items-center justify-center text-sm w-[155px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">
             Download CV
             <FaDownload className="" />
           </button>
