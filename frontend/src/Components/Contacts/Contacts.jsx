@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaMap } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaPhone } from "react-icons/fa";
@@ -8,6 +8,35 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 
 function Contacts() {
+  const [name, setName] = useState("");
+  const [number, setNumber] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
+  const [error, setError] = useState("");
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    if (!name) {
+      return setError("Name required.");
+    }
+
+    if (!email) {
+      return setError("Email required.");
+    }
+
+    if (!subject) {
+      return setError("Email subject required.");
+    }
+
+    if (!message) {
+      return setError("Email body required.");
+    }
+
+    setError("");
+  };
+
   return (
     <div className="flex flex-col p-10 gap-10">
       <div className="flex justify-center gap-3 text-7xl font-bold">
@@ -69,17 +98,62 @@ function Contacts() {
         </div>
 
         <div className="flex flex-col justify-center">
-          <form action="" className="flex flex-col gap-3">
+          <form className="flex flex-col gap-3" onSubmit={handleFormSubmit}>
             <div className="flex gap-5">
-              <input type="text" className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your name" />
-              <input type="text" className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your number" />
+              <input
+                type="text"
+                className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400"
+                placeholder="your name"
+                value={name}
+                onChange={(e) => {
+                  setName(e.target.value);
+                }}
+              />
+              <input
+                type="text"
+                className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400"
+                placeholder="your number"
+                value={number}
+                onChange={(e) => {
+                  setNumber(e.target.value);
+                }}
+              />
             </div>
             <div className="flex gap-5">
-              <input type="text" className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your email" />
-              <input type="text" className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400" placeholder="your subject" />
+              <input
+                type="text"
+                className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400"
+                placeholder="your email"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                }}
+              />
+              <input
+                type="text"
+                className=" w-full bg-neutral-800 rounded-3xl p-3 outline-none placeholder:pl-2 placeholder:text-neutral-400"
+                placeholder="your subject"
+                value={subject}
+                onChange={(e) => {
+                  setSubject(e.target.value);
+                }}
+              />
             </div>
-            <textarea name="" id="" placeholder="your message" className="h-[200px] w-full bg-neutral-800 outline-none rounded-3xl placeholder:p-3"></textarea>
-            <button className="flex gap-3 items-center w-[155px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">Send Message</button>
+            <textarea
+              name=""
+              id=""
+              placeholder="your message"
+              className="h-[200px] w-full bg-neutral-800 outline-none rounded-3xl p-3 "
+              value={message}
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            ></textarea>
+
+            {error && <p className="text-red-500 text-sm ">{error}</p>}
+            <button type="submit" className="flex gap-3 items-center w-[155px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">
+              Send Message
+            </button>
           </form>
         </div>
       </div>
@@ -88,78 +162,3 @@ function Contacts() {
 }
 
 export default Contacts;
-
-/*
- <div className="contacts">
-      <div className="contacts-title">
-        <span>CONTACT</span>
-        <span>ME</span>
-      </div>
-      <div className="contacts-box">
-        <div className="left-box">
-          <span>GET IN TOUCH</span>
-          <p>Reach Me On One Of My Social Or Contact Details Am Always Available 24/7 For Inqueries</p>
-          <div className="icon-box">
-            <FaMap size={30} className="contacts-icon" />
-            <div className="icon-text">
-              <span>Address :</span>
-              <span>Kimberley</span>
-            </div>
-          </div>
-          <div className="icon-box">
-            <MdEmail size={30} className="contacts-icon" />
-            <div className="icon-text">
-              <span>Email :</span>
-              <span>ndosisetlole@gmail.com</span>
-            </div>
-          </div>
-          <div className="icon-box">
-            <FaPhone size={30} className="contacts-icon" />
-
-            <div className="icon-text">
-              <span>Number :</span>
-              <span>0789384743</span>
-            </div>
-          </div>
-          <div className="social-media-box">
-            <div className="social-icon">
-              <a href="https://github.com/KGOSIYAGAE" target="_blank" rel="noopener noreferrer">
-                <FaGithub size={20} className="" />
-              </a>
-            </div>
-            <div className="social-icon" onClick={() => {}}>
-              <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer">
-                <FaFacebook size={20} className="" />
-              </a>
-            </div>
-            <div className="social-icon">
-              <a href="https://wa.me/1" target="_blank" rel="noopener noreferrer">
-                <FaWhatsapp size={20} className="" />
-              </a>
-            </div>
-            <div className="social-icon">
-              <a href="https://www.linkedin.com/in/kgosiyagae-motabogi-026a611ab/" target="_blank" rel="noopener noreferrer">
-                <FaLinkedin size={20} className="" />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        
-        <div className="right-box">
-          <form action="" className="contacts-form">
-            <div className="inputs">
-              <input type="text" className="form-input" placeholder="your name" />
-              <input type="text" className="form-input" placeholder="your number" />
-            </div>
-            <div className="inputs">
-              <input type="text" className="form-input" placeholder="your email" />
-              <input type="text" className="form-input" placeholder="your subject" />
-            </div>
-            <textarea name="" id="" placeholder="your message"></textarea>
-            <button className="btn-send-message">Send Message</button>
-          </form>
-        </div>
-      </div>
-    </div>
-*/
