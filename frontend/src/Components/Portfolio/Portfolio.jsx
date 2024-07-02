@@ -27,7 +27,7 @@ function Portfolio() {
           </div>
         ))}
       </div>
-      <button className="flex gap-3 items-center justify-center w-[150px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">
+      <button className="flex gap-3 items-center justify-center w-[155px] bg-blue-500 p-3 rounded-3xl mt-2 hover:bg-blue-600">
         <a href="https://github.com/KGOSIYAGAE?tab=repositories" target="_blank" rel="noopener noreferrer">
           Load More
         </a>

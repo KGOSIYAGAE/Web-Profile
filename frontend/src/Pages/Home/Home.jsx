@@ -10,7 +10,7 @@ function Home() {
         <h1 className="text-6xl font-bold">Kgosiyagae Motabogi</h1>
         <h4 className="text-blue-500">DEVELOPER + UI/UX DESIGNER</h4>
         <p>I'm a professional App developer with UI/UX Designer skills based in kimberley</p>
-        <button className="w-[150px] bg-blue-500 p-3 rounded-3xl hover:bg-blue-600">Hire Me</button>
+        <button className="w-[155px] bg-blue-500 p-3 rounded-3xl hover:bg-blue-600">Hire Me</button>
       </div>
       <div className="flex">
         <img src="/sticker-laptop.webp" alt="kgosi's picture" />
