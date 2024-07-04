@@ -38,13 +38,13 @@ function Navbar() {
 
       <div className={`w-full visible md:invisible transition-all absolute top-3 py-2 -mt-5 ${navScroll ? "bg-color-nav" : "bg-transparent"}`}>
         <MdMenu className="text-6xl hover:cursor-pointer" onClick={handleSideNav} />
-        <div className={`w-[250px] h-[500px] flex flex-col bg-neutral-800 absolute py-10 ${isShow ? "translate-x-0" : "-translate-x-full"} transition-all top-0`}>
-          <MdClose className="absolute top-3 right-3 text-red-500 text-5xl hover:cursor-pointer " onClick={handleSideNav} />
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Home</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">About</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Skill</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Portfolio</span>
-          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-3 text-2xl">Contatct Me</span>
+        <div className={`w-full h-[900px] flex flex-col justify-center items-center bg-neutral-800 absolute py-10 ${isShow ? "translate-x-0" : "-translate-x-full"} transition-all -top-1`}>
+          <MdClose className="absolute top-3 left-3 text-red-500 text-6xl hover:cursor-pointer " onClick={handleSideNav} />
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-8 text-4xl">Home</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-8 text-4xl">About</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-8 text-4xl">Skill</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-8 text-4xl">Portfolio</span>
+          <span className="hover:bg-neutral-900 hover:text-blue-500 cursor-p$ointer p-8 text-4xl">Contatct Me</span>
         </div>
       </div>
     </div>
